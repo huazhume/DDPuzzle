@@ -1,21 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="HiraginoMincho.ttc">
-            <string>HiraMinProN-W3</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Enter Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -104,13 +97,13 @@
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TPG-md-qm0">
                                                 <rect key="frame" x="19" y="30" width="337.5" height="337.5"/>
-                                                <color key="backgroundColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="TPG-md-qm0" secondAttribute="height" multiplier="1:1" id="1AL-T8-BY4"/>
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2qu-7K-5FV" customClass="TYFWaveButton">
-                                                <rect key="frame" x="18.5" y="427.5" width="100" height="40"/>
+                                                <rect key="frame" x="19" y="427.5" width="100" height="40"/>
                                                 <color key="backgroundColor" red="0.13725490200000001" green="0.13725490200000001" blue="0.13725490200000001" alpha="0.7987746147" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="100" id="3hR-HR-x0H"/>
@@ -124,7 +117,7 @@
                                                 </connections>
                                             </button>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="M0a-1Z-6pC">
-                                                <rect key="frame" x="132" y="475" width="112.5" height="112.5"/>
+                                                <rect key="frame" x="131.5" y="475" width="112.5" height="112.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="M0a-1Z-6pC" secondAttribute="height" multiplier="1:1" id="GCz-We-0Re"/>
                                                 </constraints>
@@ -143,7 +136,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AGB-OE-wdq" customClass="TYFWaveButton">
-                                                <rect key="frame" x="256.5" y="427" width="100" height="40"/>
+                                                <rect key="frame" x="256.5" y="427.5" width="100" height="40"/>
                                                 <color key="backgroundColor" red="0.13725490200000001" green="0.13725490200000001" blue="0.13725490200000001" alpha="0.7987746147" colorSpace="calibratedRGB"/>
                                                 <state key="normal" title="重置">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -160,7 +153,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2SF-wY-dtQ">
-                                                <rect key="frame" x="272.5" y="609.5" width="92.5" height="15"/>
+                                                <rect key="frame" x="272.5" y="610" width="92.5" height="15"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="92.5" id="ax1-lQ-FZl"/>
                                                 </constraints>
@@ -177,7 +170,7 @@
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="wwy-V9-SIh" firstAttribute="centerY" secondItem="2qu-7K-5FV" secondAttribute="centerY" id="1wO-L8-x32"/>
                                             <constraint firstItem="TPG-md-qm0" firstAttribute="centerX" secondItem="tH7-sV-2yn" secondAttribute="centerX" id="BzY-mL-rr3"/>
@@ -212,7 +205,7 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="haB-a8-gHr" firstAttribute="bottom" secondItem="sAd-aF-bh7" secondAttribute="bottom" id="UXE-aF-7PC"/>
                             <constraint firstItem="sAd-aF-bh7" firstAttribute="top" secondItem="haB-a8-gHr" secondAttribute="top" id="WCX-Zu-1uH"/>
@@ -297,14 +290,14 @@
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mnu-FD-OfB">
-                                        <rect key="frame" x="93.5" y="19.5" width="1" height="13"/>
+                                        <rect key="frame" x="93.5" y="19.5" width="0.5" height="13"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="0.5" id="A0D-lU-8O7"/>
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cs0-4l-Q7S">
-                                        <rect key="frame" x="94.5" y="10" width="92.5" height="32"/>
+                                        <rect key="frame" x="94" y="10" width="93.5" height="32"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                         <inset key="titleEdgeInsets" minX="2" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <inset key="imageEdgeInsets" minX="-2" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -316,7 +309,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W1z-Az-86f">
-                                        <rect key="frame" x="282" y="10" width="93" height="32"/>
+                                        <rect key="frame" x="281.5" y="10" width="93.5" height="32"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                         <inset key="titleEdgeInsets" minX="2" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <inset key="imageEdgeInsets" minX="-2" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -329,15 +322,15 @@
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="moR-T5-EQH">
-                                        <rect key="frame" x="187" y="19.5" width="0.5" height="13"/>
+                                        <rect key="frame" x="187.5" y="19.5" width="0.5" height="13"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                     <view contentMode="scaleToFill" horizontalHuggingPriority="248" translatesAutoresizingMaskIntoConstraints="NO" id="FJi-6X-rHN">
-                                        <rect key="frame" x="281" y="19.5" width="1" height="13"/>
+                                        <rect key="frame" x="281" y="19.5" width="0.5" height="13"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grP-3f-dng">
-                                        <rect key="frame" x="187.5" y="10" width="93.5" height="32"/>
+                                        <rect key="frame" x="188" y="10" width="93" height="32"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                         <inset key="titleEdgeInsets" minX="2" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <inset key="imageEdgeInsets" minX="-2" minY="0.0" maxX="0.0" maxY="0.0"/>

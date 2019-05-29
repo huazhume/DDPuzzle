@@ -11,6 +11,7 @@
 		FB245D9020E9CC99008EE542 /* WallpaperCateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB245D8E20E9CC99008EE542 /* WallpaperCateCell.m */; };
 		FB245D9120E9CC99008EE542 /* WallpaperCateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB245D8F20E9CC99008EE542 /* WallpaperCateCell.xib */; };
 		FB475BEE20E4D3C90015B24C /* SetController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB475BED20E4D3C90015B24C /* SetController.m */; };
+		FB4E6D0E227D9C7A0050F424 /* imagee.png in Resources */ = {isa = PBXBuildFile; fileRef = FB4E6D0D227D9C7A0050F424 /* imagee.png */; };
 		FBB5147820FEECBC008DA31B /* StoryMaker.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBB5144220FEECBB008DA31B /* StoryMaker.xcassets */; };
 		FBB5147920FEECBC008DA31B /* StoryMakerFontManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB5144620FEECBB008DA31B /* StoryMakerFontManager.m */; };
 		FBB5147A20FEECBC008DA31B /* UIImage+imageWithColor.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB5144720FEECBB008DA31B /* UIImage+imageWithColor.m */; };
@@ -105,6 +106,7 @@
 		FB245D8F20E9CC99008EE542 /* WallpaperCateCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WallpaperCateCell.xib; sourceTree = "<group>"; };
 		FB475BEC20E4D3C90015B24C /* SetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetController.h; sourceTree = "<group>"; };
 		FB475BED20E4D3C90015B24C /* SetController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetController.m; sourceTree = "<group>"; };
+		FB4E6D0D227D9C7A0050F424 /* imagee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imagee.png; sourceTree = "<group>"; };
 		FBB5144020FEECBB008DA31B /* WHStoryMakerHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHStoryMakerHeader.h; sourceTree = "<group>"; };
 		FBB5144220FEECBB008DA31B /* StoryMaker.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = StoryMaker.xcassets; sourceTree = "<group>"; };
 		FBB5144420FEECBB008DA31B /* CDPMonitorKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDPMonitorKeyboard.h; sourceTree = "<group>"; };
@@ -435,6 +437,7 @@
 			children = (
 				FBC6B1A020E38CD80014EF93 /* Classes */,
 				FBC6B18A20E38C5B0014EF93 /* AppDelegate.h */,
+				FB4E6D0D227D9C7A0050F424 /* imagee.png */,
 				FBC6B18B20E38C5B0014EF93 /* AppDelegate.m */,
 				FBC6B23F20E38D510014EF93 /* Main.storyboard */,
 				FBC6B19320E38C5B0014EF93 /* Assets.xcassets */,
@@ -693,7 +696,6 @@
 				FBC6B18320E38C5B0014EF93 /* Sources */,
 				FBC6B18420E38C5B0014EF93 /* Frameworks */,
 				FBC6B18520E38C5B0014EF93 /* Resources */,
-				504AD2EE57A1E98D7383F1B5 /* [CP] Embed Pods Frameworks */,
 				D12954D9471B31E3A67DFFFC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -717,7 +719,7 @@
 					FBC6B18620E38C5B0014EF93 = {
 						CreatedOnToolsVersion = 9.1;
 						LastSwiftMigration = 0910;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -760,6 +762,7 @@
 				FBB5149320FF2795008DA31B /* sticker.plist in Resources */,
 				FBC6B21C20E38CD80014EF93 /* movepiece.mp3 in Resources */,
 				FBC6B21320E38CD80014EF93 /* win.mp3 in Resources */,
+				FB4E6D0E227D9C7A0050F424 /* imagee.png in Resources */,
 				FBC6B21120E38CD80014EF93 /* welcome.mp3 in Resources */,
 				FBC6B21920E38CD80014EF93 /* 1.mp3 in Resources */,
 				FBC6B21D20E38CD80014EF93 /* sound_2.mp3 in Resources */,
@@ -778,21 +781,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		504AD2EE57A1E98D7383F1B5 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DDPuzzle/Pods-DDPuzzle-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		C8DDF2322F0A483F2ED41FD8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -817,18 +805,20 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-DDPuzzle/Pods-DDPuzzle-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-DDPuzzle/Pods-DDPuzzle-resources.sh",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 				"${PODS_ROOT}/RSKImageCropper/RSKImageCropper/RSKImageCropperStrings.bundle",
 				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RSKImageCropperStrings.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DDPuzzle/Pods-DDPuzzle-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DDPuzzle/Pods-DDPuzzle-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1026,17 +1016,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 8L4W5XFHVG;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 57BCUAK374;
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = DDPuzzle/Classes/Other/PrefixHeader.pch;
 				INFOPLIST_FILE = DDPuzzle/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dys.puzzle;
+				PRODUCT_BUNDLE_IDENTIFIER = com.huazhume.puzzle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "38bd73c9-3326-423c-a30d-364caa55580c";
-				PROVISIONING_PROFILE_SPECIFIER = puzzle_dev;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "DDPuzzle/Classes/View/DDPuzzle-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -1050,18 +1041,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 8L4W5XFHVG;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 57BCUAK374;
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = DDPuzzle/Classes/Other/PrefixHeader.pch;
 				INFOPLIST_FILE = DDPuzzle/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.dys.puzzle;
+				PRODUCT_BUNDLE_IDENTIFIER = com.huazhume.puzzle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "9b626871-7864-4a8e-b780-0dbe4ee24be7";
-				PROVISIONING_PROFILE_SPECIFIER = puzzle_dis;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "DDPuzzle/Classes/View/DDPuzzle-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;

@@ -69,6 +69,9 @@
     [segment addTarget:self action:@selector(segmentValueChange:) forControlEvents:UIControlEventValueChanged];
     _segment = segment;
     self.navigationItem.titleView = segment;
+    
+    PreviewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"PreviewController"];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)configScrollView {

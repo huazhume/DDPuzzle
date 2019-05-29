@@ -64,6 +64,11 @@
     }];
     _imageView.userInteractionEnabled = YES;
     [_imageView addGestureRecognizer:tap];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+         GameCenterController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"GameCenterController"];
+        [self.navigationController pushViewController:vc animated:YES];
+    });
 }
 
 - (void)viewWillAppear:(BOOL)animated {

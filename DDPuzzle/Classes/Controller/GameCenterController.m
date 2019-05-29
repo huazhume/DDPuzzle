@@ -68,6 +68,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.iconImage = [UIImage imageNamed:@"source"];
+    self.originImage = [UIImage imageNamed:@"source"];
     _downloadBtn.hidden = YES;
     self.matrixOrder = 3;
     self.algorithm = 3;
@@ -75,7 +77,7 @@
     NSString *path_document = NSHomeDirectory();
     //设置一个图片的存储路径
     NSString *imagePath = [path_document stringByAppendingString:@"/Documents/pic.png"];
-    self.image = [UIImage imageWithContentsOfFile:imagePath];
+    self.image = [UIImage imageNamed:@"source"];
     [self randomPiece];
     
     _resetBtn.layer.cornerRadius = 20;
@@ -345,11 +347,25 @@
         _autotimer = nil;
     }
     
-    YQInAppPurchaseTool *IAPTool = [YQInAppPurchaseTool defaultTool];
-    IAPTool.delegate = self;
-    IAPTool.CheckAfterPay = NO;
-    [SVProgressHUD showWithStatus:@"处理中..."];
-    [IAPTool requestProductsWithProductArray:@[@"com.dys.puzzle01"]];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        _autoBtn.enabled = NO;
+        [_autoBtn setTitleColor:[UIColor colorWithHexString:@"ababab"] forState:UIControlStateNormal];
+        
+        _resetBtn.enabled = NO;
+        [_resetBtn setTitleColor:[UIColor colorWithHexString:@"ababab"] forState:UIControlStateNormal];
+        
+        [self autoMove];
+    });
+    
+    [SVProgressHUD dismiss];
+    _autoBtn.enabled = YES;
+    NSLog(@"购买成功");
+    
+    YQInAppPurchaseTool *Tool = [YQInAppPurchaseTool defaultTool];
+//    IAPTool.delegate = self;
+//    IAPTool.CheckAfterPay = NO;
+//    [SVProgressHUD showWithStatus:@"处理中..."];
+//    [IAPTool requestProductsWithProductArray:@[@"com.dys.puzzle01"]];
 }
 
 - (void)setIsAutoGaming:(BOOL)isAutoGaming {
@@ -447,7 +463,7 @@
 #pragma mark --------YQInAppPurchaseToolDelegate
 //IAP工具已获得可购买的商品
 -(void)IAPToolGotProducts:(NSMutableArray *)products {
-    [self BuyProduct:@"com.dys.puzzle01"];
+//    [self BuyProduct:@"com.dys.puzzle01"];
 }
 
 //支付失败/取消
@@ -472,19 +488,7 @@
 //商品完全购买成功且验证成功了。（若CheckAfterPay为NO，则会在购买成功后直接触发此方法）
 -(void)IAPToolBoughtProductSuccessedWithProductID:(NSString *)productID
                                           andInfo:(NSDictionary *)infoDic {
-    dispatch_async(dispatch_get_main_queue(), ^{
-        _autoBtn.enabled = NO;
-        [_autoBtn setTitleColor:[UIColor colorWithHexString:@"ababab"] forState:UIControlStateNormal];
-        
-        _resetBtn.enabled = NO;
-        [_resetBtn setTitleColor:[UIColor colorWithHexString:@"ababab"] forState:UIControlStateNormal];
-        
-        [self autoMove];
-    });
-    
-    [SVProgressHUD dismiss];
-    _autoBtn.enabled = YES;
-    NSLog(@"购买成功");
+   
 }
 
 - (void)autoMove {
